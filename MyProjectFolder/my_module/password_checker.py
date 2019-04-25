@@ -1,7 +1,6 @@
 import re
 import string
 
-
 #Tests too see if there is punctuation in a string
 
 def pass_punc(input_string):
@@ -60,8 +59,7 @@ def find_dict_word(dictionary, input_word):
     confirmed_words = []
 
     #This slices a string that is input into the method to find all possible
-    #word combinations then compares those with the dictionary provided.
-    #I used https://stackoverflow.com/questions/19338113/how-to-find-possible-english-words-in-long-random-string as a reference and modified the code to make it work for me. 
+    #word combinations then compares those with the dictionary provided. 
     for letter in range(len(input_word)):
         word_cut = letter + word_len
         possible_word = input_word[letter : word_cut]
